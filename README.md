@@ -19,3 +19,15 @@ ARGS:
     <PATTERN>    The pattern to repeat
     <COUNT>      The number of times to generate
 ```
+
+Needed while trying to debug redis.
+Simply execute `repeatrrrr "SET key[] val[]" 5` and it print something like below to the output.
+You can specify `--write filename` to write it to a file instead.
+
+```somefile.txt
+SET key1 val1
+SET key2 val2
+SET key3 val3
+SET key4 val4
+SET key5 val5
+```
